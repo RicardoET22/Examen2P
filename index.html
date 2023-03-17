@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Examen - 2P</title>
+    
+</head>
+<body class="bg-default">
+  <header>
+    <nav class="navbar ">
+      <section class="container-fluid " id="menu">
+        <a id="nombre" class="navbar-brand align-middle " href="#"  >
+          <img src="img/richydev.png" alt="R" class="d-inline-block align-text-middle">
+          Ricardo Espinosa
+        </a>
+        <ul id="links" class="nav nav-justified nav-fill justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link activo" aria-current="page" href="#">Examen 2P</a>
+          </li>
+          <div id="tema">
+            <div class="capas" id="capa1" title="dark" onclick="dark()"></div>
+            <div class="capas" id="capa2" title="light" ></div>
+            <div class="capas" id="capa3" title="defaulte" ></div>
+        </div>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section id="examen1">
+    <h1 id="title">Cálculo de area</h1><br>
+    
+    <div id="opFigura">
+      <select name="figura" id="figura">
+            <option value="cuadrado">Cuadrado</option>
+            <option value="triangulo">Triangulo</option>
+            <option value="circulo">Circulo</option>
+      </select>
+      <input type="button" value="Seleccionar" onclick="seleccionarFigura()">
+    </div>
+    <hr>
+    <div id="areacalculo">
+      <div id="imagen">
+      <img src="img/richydev.png" alt="placeholder">
+      </div>
+      <div id="calculo">
+      </div>
+      <input id="calcular" type="button" value="Calcular">
+    </div>
+    <hr>
+    <div id="resultados">
+      <p id="resultado">Aquí se muestra</p>
+    </div>
+    
+  </section>
+    <footer>DAND EVN503</footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
